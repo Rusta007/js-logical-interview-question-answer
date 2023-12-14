@@ -45,3 +45,61 @@ const fibonacciSequence = generateFibonacci(10);
 console.log("Fibonacci Sequence:", fibonacciSequence);
 ```
 
+## some questions related to the length property of arrays
+
+Easy: Task 1
+#### 1. Write a program that takes an array of numbers as input and prints the total number of elements in the array.
+
+```
+function print(arr){
+    console.log(arr.length)
+}
+print([1,2,3,4,5,6])
+```
+
+Medium: Task 2
+#### 2. Write a function that takes an array of strings as input and prints each string along with its length.
+
+```
+function task2(arr){
+    for(let i = 0; i< arr.length; i++){
+        console.log(i ,arr[i])
+    }
+}
+
+const arr = ["abc", "bcd", "def"]
+task2(arr)
+```
+
+Hard: Task 3
+#### 3. Write a program that takes two arrays as input and checks if they have the same length. If they do, print "Arrays are of equal length," otherwise, print "Arrays are of different lengths."
+
+```
+function taskThird(arr1, arr2){
+    if(arr1.length === arr2.length){
+        console.log("Arrays are of equal length")
+    }else{
+          console.log("Arrays are of different lengths")
+    }
+}
+const arr1 = [1,2,3,4]
+const arr2 = [1,2,3,4,5]
+taskThird(arr1, arr2)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
