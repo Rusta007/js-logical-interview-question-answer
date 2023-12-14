@@ -87,8 +87,49 @@ const arr2 = [1,2,3,4,5]
 taskThird(arr1, arr2)
 ```
 
+Easy: Task 1
+#### 1. Write a program that takes two arrays of numbers as input and uses the concat method to concatenate them. Print the resulting array.
 
+```
+function taskFirst(arr1, arr2){
+    console.log(arr1.concat(arr2))
+}
+const arr1 = [1, 2, 3, 4];
+const arr2 = [1, 2, 3, 4];
+taskFirst(arr1, arr2);
 
+```
+
+Medium: Task 2
+#### 2. Write a function that takes two arrays of strings as input and returns a new array containing the strings from both arrays, but without any duplicates.
+
+```
+function taskSecond(arr1, arr2){
+    const uniqueArr = [...new Set(arr1.concat(arr2))];
+    console.log(uniqueArr);
+}
+
+const arr1 = ["abc", "cde", "efg"];
+const arr2 = ["abc", "ghi"];
+taskSecond(arr1, arr2);
+
+```
+
+Hard: Task 3
+#### 3. Write a program that takes three arrays of different data types (e.g., numbers, strings, and booleans) and uses the concat method to merge them into a single array. Ensure that the resulting array maintains the original order of elements.
+
+```
+function taskThird(arr1, arr2, arr3){
+    const arr = arr1.concat(arr2);
+    console.log(arr.concat(arr3));
+}
+
+const arr1 = [1, 2, 3, 4];
+const arr2 = ["abc", "cde", "efg"];
+const arr3 = [true, false];
+taskThird(arr1, arr2, arr3);
+
+```
 
 
 
